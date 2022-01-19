@@ -1,0 +1,30 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "build",
+    "downlevelIteration": true
+  },
+  // "include": [
+  //   "src/**/*",
+  // ],
+  "exclude": [
+    "node_modules",
+    "src/**/__tests__",
+    "./build/**",
+    "__mocks__/**",
+    ".dockerignore",
+    ".eslintrc.json",
+    ".gitignore",
+    ".npmrc",
+    ".travis.yml",
+    "api.yml",
+    "deploy.sh",
+    "Dockerfile",
+    "README.md"
+  ]
+}
